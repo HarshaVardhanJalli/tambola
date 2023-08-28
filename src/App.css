@@ -2,31 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +16,103 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.appContainer {
+  padding: 50px;
+}
+
+.numberBoardContainer, .lotteryActivity {
+  
+}
+
+.numberBoardContainer {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+}
+
+.lotteryActivity {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content:  space-between;
+}
+
+.numberBoxCol {
+  font-size: 24px;
+}
+
+.numberBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(120deg, #b73300, #ff3300);
+  border-radius: 6px;
+  margin: 15px;
+  color:  white;
+}
+
+.green {
+  font-weight: 700;
+  background: linear-gradient(to right, #074C00, #1f661e, #29640c);
+  color: white;
+}
+
+.generateBtn {
+  height: 100px;
+  width: 300px;
+  /* background: antiquewhite;
+  color: #4a3518; */
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.generateBtn:hover {
+  height: 100px;
+  width: 300px;
+  /* background-color: antiquewhite !important;
+  color: #4a3518 !important; */
+  font-size: 22px;
+  font-weight: 700;
+}
+.ant-card {
+  margin: 10px;
+}
+.ant-card-body {
+  padding: 24px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    height: 150px;
+    /* width: 200px; */
+    margin: 0px;
+    background: antiquewhite;
+    color: #4a3518;
+}
+
+.unPickedCount {
+  color: #ff3300;
+}
+
+.pickedCount {
+  color: #074C00;
+}
+
+.lastFive p{
+  font-size:  20px;
+}
+
+.currentNumber p{
+  font-size:  62px;
 }
