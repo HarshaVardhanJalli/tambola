@@ -83,7 +83,7 @@
   font-size: 22px;
   font-weight: 700;
 }
-.ant-card {
+.ant-card, .resetBtn {
   margin: 10px;
 }
 .ant-card-body {
@@ -94,7 +94,7 @@
     justify-content: center;
     font-size: 30px;
     font-weight: 800;
-    height: 150px;
+    height: 50px;
     /* width: 200px; */
     margin: 0px;
     background: antiquewhite;
@@ -113,6 +113,21 @@
   font-size:  20px;
 }
 
+.lastFive {
+  margin: 10px;
+}
+
+.ant-card-body:not(.lastFive .ant-card-body) { 
+  height: 150px !important;
+}
 .currentNumber p{
   font-size:  62px;
+}
+
+.resetBtn {
+  height: 100px;
+  width: 300px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 10px;
 }
