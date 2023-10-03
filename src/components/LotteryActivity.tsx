@@ -24,7 +24,7 @@ const LotteryActivity = (props:any) => {
             </Card>
         </Card>
         <Card className="lastFive" style={{ width: 300, height: 50 }}>
-            <p>{pickedNumbers.slice(-5).join(" , ")}</p>
+            <p>{pickedNumbers.legnth === 0 ? 'No numbers picked yet!' : pickedNumbers.slice(-5).join(" , ")}</p>
         </Card>
         <Button type="primary" className='resetBtn' onClick={() => {resetGame()}} danger>Reset Game</Button>
     </div>
