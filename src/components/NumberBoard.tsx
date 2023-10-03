@@ -25,12 +25,20 @@ const NumberBoard = () => {
         return removedElement;
     }
 
+    const speakNumber = (numberToSpeak:any) => {
+        const synth = window.speechSynthesis;
+        const utterThis = new SpeechSynthesisUtterance(numberToSpeak);
+        utterThis.voice = synth.getVoices()[5];
+        synth.speak(utterThis);
+    }
+    
     const generateRandomNumber = () => {
         if (unPickedNumbers.length === 0) {
             return null; // Return null if the array is empty
         }
         const randomNumber = removeRandomElementFromArray();
         setCurrentNumber(randomNumber);
+        speakNumber(randomNumber);
         setUnPickedNumbers(unPickedNumbers.filter(num => num !== randomNumber));
         setPickedNumbers([...pickedNumbers, randomNumber]);
     }
