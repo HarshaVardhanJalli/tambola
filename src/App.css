@@ -43,7 +43,7 @@
 }
 
 .numberBoxCol {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .numberBox {
@@ -51,12 +51,13 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  height: 50px;
-  width: 50px;
+  height: 44px;
+  width: 44px;
   background: linear-gradient(120deg, #b73300, #ff3300);
   border-radius: 6px;
   margin: 15px;
   color:  white;
+  font-size: 22px;
 }
 
 .green {
@@ -130,4 +131,10 @@
   font-size: 22px;
   font-weight: 700;
   margin: 10px;
+}
+
+.ant-table-cell {
+  height: 60px;
+  width: 60px;
+  padding: 0px 15px !important;
 }
