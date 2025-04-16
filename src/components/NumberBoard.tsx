@@ -7,7 +7,7 @@ import LotteryActivity from './LotteryActivity';
 const NumberBoard = () => {
   const numbersConst = 90;
   const [currentNumber, setCurrentNumber] = useState<number | null>(null);
-  const [allNumbers, setAllNumbers] = useState(
+  const [allNumbers,] = useState(
     Array.from({ length: numbersConst }, (_, index) => index + 1)
   );
   const [unPickedNumbers, setUnPickedNumbers] = useState<(number | null)[]>(
